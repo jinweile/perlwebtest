@@ -1,0 +1,119 @@
+<html>  
+<head>  
+  <title>标题</title>
+</head>  
+<body>
+    <div>
+        <input type="checkbox" id="all" value="" />
+        <div id="div1">
+            <p>
+                <input type="checkbox" name="u_all" value="1" />
+            </p>
+            <p>
+                <input type="checkbox" name="u_all" value="2" />    
+            </p>
+            <p>
+                <input type="checkbox" name="u_all" value="3" />    
+            </p>
+            <p>
+                <input type="checkbox" name="u_all" value="4" />    
+            </p>
+            <p>
+                <input type="checkbox" name="u_all" value="5" />    
+            </p>
+        </div>
+    </div>  
+</body>  
+<script language="javascript" type="text/javascript">
+//    var a = document.getElementById("all");
+//    a.addEventListener("click", function () {
+//        var z = document.getElementsByName("u_all");
+//        alert(z);
+//        for (var i = 0; i < document.getElementsByName("u_all").length; i++) {
+//            if (a.checked == true) {
+//                document.getElementsByName("u_all")[i].checked = true;
+//            }
+//            else {
+//                document.getElementsByName("u_all")[i].checked = false;
+//            }
+//        }
+//    });
+//    window.onload = function () {
+//        var y = document.getElementsByName("u_all").length;
+//        var w;
+//        for (var z = 0; z < document.getElementsByName("u_all").length; z++) {
+//            (function (num) {
+//                document.getElementsByName("u_all")[z].onclick = function () {
+//                    //清0这步重要
+//                    w = 0;
+//                    for (var i = 0; i < document.getElementsByName("u_all").length; i++) {
+//                        if (document.getElementsByName("u_all")[i].checked == true) {
+//                            w++;
+//                        }
+//                        else {
+//                            w--;
+//                        }
+//                    }
+//                    if (y != w) {
+//                        a.checked = false;
+//                    }
+//                    else {
+//                        a.checked = true;
+//                    }
+//                }
+//            })(z);
+//        }
+//    };
+
+
+    function select() {
+        var _this = this;
+        this.all = document.getElementById("all");
+        this.u_all = document.getElementsByName("u_all");
+        this.all.onclick = function () {
+            _this.allset(all, _this.u_all);
+        }
+        this.dan = function () {
+            _this.u_allset(all, _this.u_all);
+        }
+    }
+    select.prototype.allset = function (all, u_all) {
+        for (var i = 0; i < this.u_all.length; i++) {
+            if (all.checked == true) {
+                u_all[i].checked = true;
+            }
+            else {
+                u_all[i].checked = false;
+            }
+        }
+    }
+    select.prototype.u_allset = function (all, u_all) {
+        for (var z = 0; z < u_all.length; z++) {
+            (function (num) {
+                u_all[z].onclick = function () {
+                    //清0这步重要
+                    w = 0;
+                    for (var i = 0; i < u_all.length; i++) {
+                        if (u_all[i].checked == true) {
+                            w++;
+                        }
+                        else {
+                            w--;
+                        }
+                    }
+                    if (u_all.length != w) {
+                        all.checked = false;
+                    }
+                    else {
+                        all.checked = true;
+                    }
+                }
+            })(z);
+        }
+    }
+    window.onload = function () {
+        var b1 = new select();
+        b1.dan();
+    }
+    </script>
+</html> 
