@@ -1,0 +1,207 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 125.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/jinweile/文档/workspace/perl/webtest",
+		"/home/jinweile/文档/workspace/perl/webtest/lib",
+		"/home/jinweile/文档/workspace/perl/webtest/public",
+		"/home/jinweile/文档/workspace/perl/webtest/script",
+		"/home/jinweile/文档/workspace/perl/webtest/t",
+		"/home/jinweile/文档/workspace/perl/webtest/templates",
+		"/home/jinweile/文档/workspace/perl/webtest/templates/example",
+		"/home/jinweile/文档/workspace/perl/webtest/templates/layouts"
+	],
+	"file_history":
+	[
+		"/home/jinweile/文档/workspace/perl/webtest/script/webtest",
+		"/home/jinweile/文档/workspace/perl/webtest/public/index.html",
+		"/home/jinweile/文档/workspace/perl/webtest/public/3.htm",
+		"/home/jinweile/文档/workspace/perl/webtest/templates/example/welcome.html.ep",
+		"/home/jinweile/文档/workspace/perl/webtest/templates/layouts/default.html.ep",
+		"/home/jinweile/文档/workspace/perl/webtest/lib/Webtest.pm",
+		"/Users/jinweile/Documents/workspace/perl/webtest/t/basic.t",
+		"/Users/jinweile/Documents/workspace/perl/webtest/lib/Webtest.pm",
+		"/Users/jinweile/Documents/workspace/perl/webtest/templates/example/welcome.html.ep",
+		"/Users/jinweile/Documents/workspace/perl/webtest/public/index.html",
+		"/Users/jinweile/Documents/workspace/perl/webtest/lib/Webtest/Example.pm",
+		"/Users/jinweile/Documents/workspace/perl/webtest/script/webtest",
+		"/Users/jinweile/Documents/workspace/perl/webtest/public/3.htm",
+		"/Users/jinweile/Documents/workspace/perl/webtest/templates/layouts/default.html.ep",
+		"/Users/jinweile/Documents/workspace/perl/webtest/webtest.sublime-project",
+		"/Users/jinweile/Documents/workspace/perl/exercise/exercise.sublime-project",
+		"/Users/jinweile/Documents/workspace/perl/exercise/api_nginx.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/hash_sort.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/nginx_config.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/redis.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/memcached.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/md5_nginx.conf",
+		"/Users/jinweile/Documents/workspace/perl/exercise/log4perl.conf",
+		"/Users/jinweile/Documents/workspace/perl/exercise/log4perl.log",
+		"/Users/jinweile/Documents/workspace/perl/exercise/nginx.conf",
+		"/Users/jinweile/Documents/workspace/perl/exercise/dbi_test.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/test1.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/sqlserver.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/nginx_test.pl",
+		"/Users/jinweile/Documents/workspace/perl/exercise/test",
+		"/Users/jinweile/Documents/workspace/perl/exercise/exercise.sublime-workspace"
+	],
+	"find":
+	{
+		"height": 59.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"match"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 59.0
+	},
+	"input":
+	{
+		"height": 59.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "webtest.sublime-project",
+	"replace":
+	{
+		"height": 110.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 448.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
