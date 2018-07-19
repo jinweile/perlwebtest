@@ -38,7 +38,7 @@ sub index {
     print $item->{"area_code"}."|".$item->{"area_nums"}."|".$item->{"area_name"}."\n";
   }
 
-  $self->res->headers->header('Content-Type' => 'text/html;charset=utf-8');
+  # $self->res->headers->header('Content-Type' => 'text/html;charset=utf-8');
   $self->render(
     # numbers => @numbers
     item => $list[0],
