@@ -1,6 +1,7 @@
 package Webtest::Example;
 use Mojo::Base 'Mojolicious::Controller';
 use DBI;
+use Encode;
 
 # This action will render a template
 sub welcome {
@@ -27,15 +28,27 @@ sub index {
   $dbh = DBI->connect($dsn,$user,$password);#连接数据库
   $sth = $dbh->prepare("select * from area_count");#准备
   $sth->execute();#执行
-  my $ary = $sth->fetchrow_hashref();
+  my @list = ();
+  while(my $item = $sth->fetchrow_hashref()) {
+    $item->{"area_name"} = decode_utf8($item->{"area_name"});
+    push @list, $item;
+  }
 
+  foreach my $item (@list) {
+    print $item->{"area_code"}."|".$item->{"area_nums"}."|".$item->{"area_name"}."\n";
+  }
+
+  $self->res->headers->header('Content-Type' => 'text/html;charset=utf-8');
   $self->render(
     # numbers => @numbers
-    ary => $ary
+    item => $list[0],
+    list => [@list]
   );
 
   $sth->finish;#结束句柄
   $dbh->disconnect;#断开
+
+  # 1/0;
 }
 
 1;

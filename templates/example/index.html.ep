@@ -6,6 +6,11 @@ and the layout "templates/layouts/default.html.ep",
 <a href="<%== url_for %>">click here</a> to reload the page or
 <a href="/index.html">here</a> to move forward to a static page.
 <br/>
-<%= $ary->{'area_code'} %>
+----------------------------------------<br/>
+<%= $item->{"area_code"}."|".$item->{"area_nums"}."|".$item->{"area_name"} %> <br/>
+----------------------------------------<br/>
+% foreach my $one (@$list) {
+    <%= $one->{"area_code"}."|".$one->{"area_nums"}."|".$one->{"area_name"} %> <br/>
+% }
 ----------------------------------------
 
