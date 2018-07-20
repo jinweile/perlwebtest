@@ -26,6 +26,7 @@ sub index {
   my $password = '123456';
   my ($dbh,$sth);
   $dbh = DBI->connect($dsn,$user,$password);#连接数据库
+  # $dbh->do("SET NAMES utf8");
   $sth = $dbh->prepare("select * from area_count");#准备
   $sth->execute();#执行
   my @list = ();
