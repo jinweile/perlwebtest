@@ -1,7 +1,9 @@
 package Webtest::Example;
 use Mojo::Base 'Mojolicious::Controller';
-use DBI;
-use Encode;
+
+use FindBin qw($Bin);
+use lib "$Bin/../lib/db";
+use AreaCount;
 
 # This action will render a template
 sub welcome {
@@ -19,35 +21,13 @@ sub welcome {
 sub index {
   my $self = shift;
 
-  # my @numbers = [1 .. 13];
-
-  my $dsn = "DBI:mysql:database=openapi;host=192.168.0.141";
-  my $user = 'root';
-  my $password = '123456';
-  my ($dbh,$sth);
-  $dbh = DBI->connect($dsn,$user,$password);#连接数据库
-  # $dbh->do("SET NAMES utf8");
-  $sth = $dbh->prepare("select * from area_count");#准备
-  $sth->execute();#执行
-  my @list = ();
-  while(my $item = $sth->fetchrow_hashref()) {
-    $item->{"area_name"} = decode_utf8($item->{"area_name"});
-    push @list, $item;
-  }
-
-  foreach my $item (@list) {
-    print $item->{"area_code"}."|".$item->{"area_nums"}."|".$item->{"area_name"}."\n";
-  }
+  my @list = AreaCount->findlist();
 
   # $self->res->headers->header('Content-Type' => 'text/html;charset=utf-8');
   $self->render(
-    # numbers => @numbers
     item => $list[0],
     list => [@list]
   );
-
-  $sth->finish;#结束句柄
-  $dbh->disconnect;#断开
 
   # 1/0;
 }
