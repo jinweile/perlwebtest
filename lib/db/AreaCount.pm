@@ -3,11 +3,14 @@ package AreaCount;
 use DBI;
 use Encode;
 
+use lib "$Bin/../lib/db";
+use DbConfig;
+
 # find areacount list
 sub findlist {
-  my $dsn = "DBI:mysql:database=openapi;host=192.168.0.141";
-  my $user = 'root';
-  my $password = '123456';
+  my $dsn = $DbConfig::dsn;
+  my $user = $DbConfig::user;
+  my $password = $DbConfig::password;
 
   my ($dbh,$sth);
   $dbh = DBI->connect($dsn,$user,$password);#连接数据库
