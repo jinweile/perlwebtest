@@ -2,6 +2,7 @@ package DbConfig;
 
 use lib "$Bin/../lib/db";
 
-my $dsn = "DBI:mysql:database=openapi;host=192.168.0.141";
-my $user = 'root';
-my $password = '123456';
+# must set dsn user password to globle var
+our $dsn = "DBI:mysql:database=openapi;host=192.168.0.141";
+our $user = 'root';
+our $password = '123456';

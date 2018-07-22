@@ -6,11 +6,14 @@ use Encode;
 use lib "$Bin/../lib/db";
 use DbConfig;
 
+
 # find areacount list
 sub findlist {
   my $dsn = $DbConfig::dsn;
   my $user = $DbConfig::user;
   my $password = $DbConfig::password;
+
+  print "dsn:".$DbConfig::dsn."\n";
 
   my ($dbh,$sth);
   $dbh = DBI->connect($dsn,$user,$password);#连接数据库
