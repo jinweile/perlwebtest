@@ -7,10 +7,10 @@ and the layout "templates/layouts/default.html.ep",
 <a href="/index.html">here</a> to move forward to a static page.
 <br/>
 ----------------------------------------<br/>
-<%= $item->{"area_code"}."|".$item->{"area_nums"}."|".$item->{"area_name"} %> <br/>
+<%= $item->{"area_code"}."~".$item->{"area_nums"}."~".$item->{"area_name"} %> <br/>
 ----------------------------------------<br/>
 % foreach my $one (@$list) {
-    <%= $one->{"area_code"}."|".$one->{"area_nums"}."|".$one->{"area_name"} %> <br/>
+    <%= $one->{"area_code"}."~".$one->{"area_nums"}."~".$one->{"area_name"} %> <br/>
 % }
 ----------------------------------------
 

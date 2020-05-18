@@ -30,8 +30,8 @@ sub findlist {
   $dbh->disconnect;#断开
 
   foreach my $item (@list) {
-    print $item->{"area_code"}."|"
-    .$item->{"area_nums"}."|"
+    print $item->{"area_code"}."~"
+    .$item->{"area_nums"}."~"
     .$item->{"area_name"}."\n";
   }
 

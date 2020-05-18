@@ -7,6 +7,39 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "lib/db/AreaCount.pm",
+			"settings":
+			{
+				"buffer_size": 746,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/db/DbConfig.pm",
+			"settings":
+			{
+				"buffer_size": 190,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/Webtest/Example.pm",
+			"settings":
+			{
+				"buffer_size": 637,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "lib/Webtest.pm",
+			"settings":
+			{
+				"buffer_size": 359,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -40,14 +73,16 @@
 	},
 	"expanded_folders":
 	[
-		"/home/jinweile/文档/workspace/perl/webtest",
-		"/home/jinweile/文档/workspace/perl/webtest/lib",
-		"/home/jinweile/文档/workspace/perl/webtest/public",
-		"/home/jinweile/文档/workspace/perl/webtest/script",
-		"/home/jinweile/文档/workspace/perl/webtest/t",
-		"/home/jinweile/文档/workspace/perl/webtest/templates",
-		"/home/jinweile/文档/workspace/perl/webtest/templates/example",
-		"/home/jinweile/文档/workspace/perl/webtest/templates/layouts"
+		"/home/jinweile/workspace/perl/webtest",
+		"/home/jinweile/workspace/perl/webtest/lib",
+		"/home/jinweile/workspace/perl/webtest/lib/db",
+		"/home/jinweile/workspace/perl/webtest/lib/Webtest",
+		"/home/jinweile/workspace/perl/webtest/public",
+		"/home/jinweile/workspace/perl/webtest/script",
+		"/home/jinweile/workspace/perl/webtest/t",
+		"/home/jinweile/workspace/perl/webtest/templates",
+		"/home/jinweile/workspace/perl/webtest/templates/example",
+		"/home/jinweile/workspace/perl/webtest/templates/layouts"
 	],
 	"file_history":
 	[
@@ -85,7 +120,7 @@
 	],
 	"find":
 	{
-		"height": 59.0
+		"height": 28.0
 	},
 	"find_in_files":
 	{
@@ -117,14 +152,131 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "lib/db/AreaCount.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 746,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								120,
+								120
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "lib/db/DbConfig.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 190,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "lib/Webtest/Example.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 637,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "lib/Webtest.pm",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 359,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								200,
+								200
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Perl/Perl.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 59.0
+		"height": 28.0
 	},
 	"input":
 	{
@@ -161,7 +313,7 @@
 	"project": "webtest.sublime-project",
 	"replace":
 	{
-		"height": 110.0
+		"height": 52.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -199,7 +351,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 448.0,
+	"side_bar_width": 289.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
